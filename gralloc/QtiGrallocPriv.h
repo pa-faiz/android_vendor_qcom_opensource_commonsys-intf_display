@@ -32,7 +32,7 @@
 /*
  * Changes from Qualcomm Innovation Center are provided under the following license:
  *
- * Copyright (c) 2022-2023 Qualcomm Innovation Center, Inc. All rights reserved.
+ * Copyright (c) 2022-2024 Qualcomm Innovation Center, Inc. All rights reserved.
  * SPDX-License-Identifier: BSD-3-Clause-Clear
  */
 
@@ -182,9 +182,9 @@ struct private_handle_t : public native_handle_t {
         base_metadata(0),
         gpuaddr(0),
         reserved_size(0),
+        custom_content_md_reserved_size(0),
         linear_size(0),
-        ubwcp_format(format),
-        custom_content_md_reserved_size(0) {
+        ubwcp_format(format) {
     version = static_cast<int>(sizeof(native_handle));
     numInts = NumInts();
     numFds = kNumFds;
