@@ -6,7 +6,7 @@ aidl_interface {
     ],
     stability: "vintf",
     imports: [
-        "android.hardware.graphics.composer3-V2",
+        "android.hardware.graphics.composer3-V3",
     ],
     backend: {
         java: {
@@ -21,7 +21,7 @@ aidl_interface {
     versions_with_info: [
         {
             version: "1",
-            imports: ["android.hardware.graphics.composer3-V2"],
+            imports: ["android.hardware.graphics.composer3-V3"],
         },
     ],
     frozen: true,
