@@ -30,7 +30,7 @@
  */
 
 /*
- * Copyright (c) 2023 Qualcomm Innovation Center, Inc. All rights reserved.
+ * Copyright (c) 2023-2024 Qualcomm Innovation Center, Inc. All rights reserved.
  * SPDX-License-Identifier: BSD-3-Clause-Clear
  */
 
@@ -89,6 +89,9 @@
 
 /* This flag is used to indicate No UBWC-P support */
 #define GRALLOC_USAGE_PRIVATE_NO_UBWC_P          1ULL << 54
+
+/* This flag is used to indicate UBWC_NV124R format usage */
+#define GRALLOC_USAGE_PRIVATE_ALLOC_UBWC_4R      1ULL << 55
 
 // OEM specific HAL formats
 #define HAL_PIXEL_FORMAT_RGBA_5551 6
