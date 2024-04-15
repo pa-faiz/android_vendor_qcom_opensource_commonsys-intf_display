@@ -33,4 +33,5 @@ PRODUCT_PACKAGES += vendor.qti.hardware.display.allocator@1.0.vendor \
                     vendor.qti.hardware.display.config-V9-ndk.vendor \
                     vendor.qti.hardware.display.config-V10-ndk.vendor \
                     vendor.qti.hardware.display.composer3-V1-ndk.vendor \
-                    vendor.qti.hardware.display.aiqe-V1-ndk
+                    vendor.qti.hardware.display.aiqe-V1-ndk \
+                    vendor.qti.hardware.display.aiqe-V2-ndk
