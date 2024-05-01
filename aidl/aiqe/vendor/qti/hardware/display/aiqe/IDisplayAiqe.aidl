@@ -1,5 +1,4 @@
 /*
- * Changes from Qualcomm Innovation Center, Inc. are provided under the following license:
  * Copyright (c) 2024 Qualcomm Innovation Center, Inc. All rights reserved.
  * SPDX-License-Identifier: BSD-3-Clause-Clear
  */
@@ -33,4 +32,27 @@ interface IDisplayAiqe {
      * @return vector of COPR statistic data
      */
     int[] getCoprStats(in int disp_id);
+    /**
+     * Set ABC feature State
+     *
+     * @param dispId ID of the display to target.
+     * @param enable control ABC feature enable/disable
+     * @return error is NONE upon success
+     */
+    void setABCState(in int dispId, in int enable);
+    /**
+     * Set ABC feature Reconfig
+     *
+     * @param dispId ID of the display to target.
+     * @return error is NONE upon success
+     */
+    void setABCReconfig(in int dispId);
+    /**
+     * Set ABC feature mode
+     *
+     * @param dispId ID of the display to target.
+     * @param mode name of the ABC feature
+     * @return error is NONE upon success
+     */
+    void setABCMode(in int dispId, in String mode_name);
 }
