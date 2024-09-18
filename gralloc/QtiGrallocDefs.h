@@ -1,7 +1,7 @@
 /*
  * Copyright (c) 2020-2021 The Linux Foundation. All rights reserved.
  *
- * Copyright (c) 2022 Qualcomm Innovation Center, Inc. All rights reserved.
+ * Copyright (c) 2022, 2024 Qualcomm Innovation Center, Inc. All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
  * modification, are permitted provided that the following conditions are
@@ -98,6 +98,9 @@
 
 /* This flag is used to indicate UBWC - 2:1 compression ratio */
 #define GRALLOC_USAGE_PRIVATE_UBWC_L_2_TO_1      1ULL << 57
+
+/* This flag is used to indicate multiview use case */
+#define GRALLOC_USAGE_PRIVATE_MULTIVIEW      1ULL << 58
 
 // OEM specific HAL formats
 #define HAL_PIXEL_FORMAT_RGBA_5551 6
